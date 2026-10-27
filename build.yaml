@@ -1,0 +1,68 @@
+# BUILD MANIFEST - aetherion-engine
+
+# Recorded on 2026-10-20 when the workspace was reorganised so that every first-party project
+# sits inside the project that owns it. The manifest records what
+# was measured, not what the project's own documentation claims.
+
+schema_version: "1.0.0"
+
+project:
+  id: aetherion-engine
+  name: aetherion-engine
+  kind: application
+  domain: intelligence
+  description: >-
+    Design seed and corpus-derived requirements for the aetherion engine:
+    video, graphics, audio and game engine in one runtime.
+  repository: true
+  branch: main
+  languages: []
+
+toolchain:
+  build_system: "to be determined"
+  package_manager: "to be determined"
+  requirements:
+    - name: development environment
+      version: "to be defined"
+      required: true
+      purpose: "cross-platform multimedia engine development"
+    - name: GPU support
+      version: "CUDA/OpenCL/Metal"
+      required: true
+      purpose: "hardware-accelerated processing"
+    - name: multimedia libraries
+      version: "FFmpeg, graphics APIs"
+      required: true
+      purpose: "video, graphics and audio processing"
+
+commands:
+  - name: inspect
+    command: "echo 'aetherion-engine design seed phase - architecture defined, implementation pending'"
+    working_directory: .
+    timeout_minutes: 1
+
+dependencies:
+  projects: []
+  external: []
+
+status:
+  state: NOT_STARTED
+  last_verified: "2026-10-27"
+  summary: >-
+    The project is in the design seed phase. The owner's scope, technical
+    architecture and implementation requirements are documented, and the
+    2026-10-27 corpus pass added requirements A-H for the asset pipeline,
+    rendering, simulation, audio, video, platform and constraints. No buildable
+    source or asset exists yet, so the status remains NOT_STARTED.
+  evidence:
+    - "The project was registered during the workspace reorganisation of 2026-10-20"
+    - "DESIGN_SEED.md created with technical architecture and implementation roadmap (2026-10-25)"
+    - "Corpus-derived requirements A-H added to DESIGN_SEED.md from 34 extracted engine threads (2026-10-27)"
+    - "Corpus index: Aetherius-OS/docs/CHAT-CORPUS-INVENTORY-2026-10-27.md (keyword triage, not proof)"
+    - "Measured own source lines: 0 (still in design phase)"
+
+notes:
+  - >-
+    The project is a first-party project of the owner that had no folder in the
+    workspace until the reorganisation. It is now registered, and the manifest
+    records that it is not yet buildable.
